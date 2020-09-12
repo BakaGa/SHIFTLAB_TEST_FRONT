@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#search-form {
+    margin-bottom: 10px;
+}
+
+#search-form p {
+    display: none;
+}
+
+#search-input {
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white !important;
+    outline: none;
+    width: 150px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+#search-input:focus {
+    border-color: #55a;
+    box-shadow: 0 0 0 0.2rem rgba(4, 4, 128, 0.25);
+}
+
+#search-button {
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    padding: .3em 2em;
+    border: 1px solid black;
+    background-color: #444;
+    border-radius: 4px;
+    transition: 0.2s;
+    height: 25px;
+}
+
+#search-button:hover {
+    background-color: #777;
+}
+
+#search-button:active {
+    background-color: #eee;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+#output {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.headers div p {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #444;
+}
+
+.header-content {
+    display: none;
+}
+
+.cell {
+    width: 20%;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+}
+
+.container p {
+    background-color: #777;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Helvetica;
+    color: white;
+}
+
+.headers div p:hover,
+.container p:hover {
+    background-color: #E7E7E7;
+    color: black;
+}
+
+/* Only for small (<421px) screens*/
+@media (max-width: 420px) {
+    .cell {
+        margin-bottom: 5px;
+        width: 70%;
+        float: none;
+    }
+
+    .row {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid black;
+    }
+
+    .headers {
+        display: none;
+    }
+
+    .header-content {
+        display: block;
+        text-align: center;
+    }
+}
